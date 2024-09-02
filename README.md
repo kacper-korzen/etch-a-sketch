@@ -15,7 +15,7 @@ This project is a basic implementation of the classic Etch a Sketch game. The us
 
 ## Demo
 
-[**Live Demo**](link to your project) | [**Project Specs**](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
+[**Live Demo**](https://radix-ratio.github.io/etch-a-sketch/) | [**Project Specs**](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
 
 ## Screenshots
 
