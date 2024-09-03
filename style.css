@@ -1,0 +1,100 @@
+:root {
+    --clr-text: hsl(327, 82%, 2%);
+    --clr-body: hsl(327, 20%, 15%);
+    --clr-background: hsl(328, 76%, 97%);
+    --clr-primary: hsl(330, 81%, 51%);
+    --clr-secondary: hsl(147, 80%, 72%);
+    --clr-accent: hsl(204, 80%, 64%);
+
+
+    --ff-base: "Karla", sans-serif;
+    --ff-accent: "Inconsolata", monospace;
+
+    /* for fonts sizes use: https://utopia.fyi/type/calculator*/
+    --fs-300: clamp(1rem, 0.8696rem + 0.6522vw, 1.375rem);
+    --fs-400: clamp(1.2rem, 1.0196rem + 0.9022vw, 1.7188rem);
+    --fs-500: clamp(1.44rem, 1.1936rem + 1.2321vw, 2.1484rem);
+    --fs-600: clamp(1.728rem, 1.3949rem + 1.6653vw, 2.6855rem);
+    --fs-700: clamp(2.0736rem, 1.6272rem + 2.2319vw, 3.3569rem);
+    --fs-800: clamp(2.4883rem, 1.8943rem + 2.9702vw, 4.1962rem);
+
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-text: hsl(330, 80%, 98%);
+        --clr-body: hsl(327, 15%, 85%);
+        --clr-background: hsl(327, 73%, 3%);
+        --clr-primary: hsl(330, 81%, 49%);
+        --clr-secondary: hsl(147, 80%, 28%);
+        --clr-accent: hsl(204, 80%, 36%);
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    color-scheme: light dark;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: var(--ff-base);
+    font-size: var(--fs-400);
+    line-height: 1.5;
+    color:var(--clr-body);
+    background-color: var(--clr-background);
+}
+
+.wrapper {
+    width: min(65ch, 100% - 4rem);
+    margin-inline: auto;
+    min-height: 100vh;
+}
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}
+
+h1 {
+    --flow-space: 2em;
+}
+
+h2 {
+    --flow-space: 1.5em;
+}
+
+h3 {
+    --flow-space: 1.125em;
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-accent);
+    line-height: 1.1;
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: var(--fs-700);
+}
+
+h2 {
+    font-size: var(--fs-600);
+}
+
+h3{
+    font-size: var(--fs-500);
+}
+
