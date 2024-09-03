@@ -12,20 +12,26 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Etch a Sketch</h1>
-        <p>Unleash your imagination</p>
-    </header>
-
-    <main class="wrapper flow">
-        <div id="canva"></div>
-        <div class="contols">
-
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy;<script> document.write(new Date().getFullYear())</script> radix-ratio</p>
+    <div class="wrapper text-center flex-wrapper">
+        <header class="hero">
+            <h1><span class="clr-primary">Etch</span> a <span class="clr-secendary">Sketch</span></h1>
+            <p>Unleash your imagination</p>
+        </header>
+        
+        <main >
+            <div id="canva"></div>
+            <div class="contols">
+                    <span id="canva-size">16 x 16</span> 
+                    <input type="range" name="slider" id="slider-size" min="2" max="100"> 
+                    <input type="color" name="color" id="color"> 
+                    <input type="button" value="Erase">
+                    <input type="button" value="Clear">
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy;<script> document.write(new Date().getFullYear())</script> radix-ratio</p>
+    </div>
     </footer>
 </body>
 </html>
