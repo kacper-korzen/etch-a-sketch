@@ -17,10 +17,6 @@ function createSquare(canvaSize){
         square.style.backgroundColor = markerColor.value;
     });
 
-    square.addEventListener('pointerover', () => {
-        square.style.backgroundColor = markerColor.value;
-    });
-
     return square;
 }
 
