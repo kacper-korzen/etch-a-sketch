@@ -222,7 +222,7 @@ main {
 }
 
 .grid-square {
-    background-color: aliceblue;
+    background-color: #F0F8FF;
     border-radius: .215rem;
     border: 0.1px solid var(--clr-canva);
     cursor: pointer;      
