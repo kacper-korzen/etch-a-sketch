@@ -2,26 +2,33 @@
 const canva = document.querySelector('#canva');
 const slider = document.querySelector('#slider-size');
 
-function createGrid() {   
-    for (let i = 0; i < 16; i++) {
+const displayCanvaSize = document.querySelector('#canva-size');
+function updateCanvaSizeDisplay() {
+    displayCanvaSize.textContent = `${slider.value} x ${slider.value}`;
+}
+const tempCanva = document.createElement('div');
+function createGrid(canvaSize) {   
+    canva.textContent = '';
+    for (let i = 0; i < canvaSize; i++) {
         const row = document.createElement('div');
         row.classList.add('grid-row');
-        for (let j = 0; j < 16; j++) {
-            const square= document.createElement('div');
+        for (let j = 0; j < canvaSize; j++) {
+            const square = document.createElement('div');
             square.classList.add('grid-square');
+            square.style.width = canva.clientWidth / canvaSize + 'px';
+            square.style.height = canva.clientHeight / canvaSize + 'px';
             row.appendChild(square);
         }
         canva.appendChild(row);
     }
 }
 
-const canvaSize = document.querySelector('#canva-size');
-function updateCanvaSizeDisplay() {
-    canvaSize.textContent = `${slider.value} x ${slider.value}`;
-}
 
-slider.addEventListener('input', updateCanvaSizeDisplay);
-createGrid();
+createGrid(slider.value);
+slider.addEventListener('input', () =>{
+    updateCanvaSizeDisplay();
+    createGrid(slider.value);
+});
 
 const color = document.querySelector('#color');
 const erase = document.querySelector('#erase');
