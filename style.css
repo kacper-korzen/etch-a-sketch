@@ -174,7 +174,7 @@ main {
     cursor: pointer;
 }
 
-.contols > input[type="color"] {
+.contols input[type="color"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -185,12 +185,12 @@ main {
     cursor: pointer;
 }
 
-.contols > input[type="color"]::-webkit-color-swatch {
+.contols input[type="color"]::-webkit-color-swatch {
     border-radius: 50%;
     border: none;
 }
 
-.contols > button {
+.contols  button {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     border: 1px solid transparent;
@@ -200,8 +200,8 @@ main {
     font-size: var(--fs-300);
 }
 
-.contols > button:hover,
-.contols > button:focus {
+.contols  button:hover,
+.contols  button:focus {
     border-color: var(--clr-accent);
     background-color: transparent;
     color: var(--clr-accent);
@@ -228,10 +228,10 @@ main {
     cursor: pointer;      
 }
 
-@media (width > 1600px) {
+@media (width > 1000px) {
     #canva{
-        width: 1250px;
-        height: 1250px;
+        width: 750px;
+        height: 750px;
     }
 
     main {
