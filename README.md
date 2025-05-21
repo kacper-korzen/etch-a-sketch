@@ -15,7 +15,7 @@ This project is a basic implementation of the classic Etch a Sketch game. The us
 
 ## Demo
 
-[**Live Demo**](https://radix-ratio.github.io/etch-a-sketch/) | [**Project Specs**](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
+[**Live Demo**](https://kacper-korzen.github.io/etch-a-sketch/) | [**Project Specs**](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
 
 ## Screenshots
 
@@ -37,4 +37,4 @@ This project is licensed under the MIT License. See [`LICENSE`](https://chooseal
 
 ## Authors
 
-- [@radix-ratio](https://www.github.com/radix-ratio)
+- [@Kacper K](https://www.github.com/kacper-korzen)
